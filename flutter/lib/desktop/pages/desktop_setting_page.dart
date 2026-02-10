@@ -1969,7 +1969,7 @@ class _DisplayState extends State<_Display> {
           key: key,
           value: b
               ? 'Y'
-              : (key == kOptionEnableFileCopyPaste ? 'N' : defaultOptionNo));
+              : (key == kOptionEnableFileCopyPaste || key == kOptionDisableAudio ? 'N' : defaultOptionNo));
       setState(() {});
     }
 
